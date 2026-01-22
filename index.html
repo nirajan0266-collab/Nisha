@@ -1,111 +1,179 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>ROUTINE</title>
+    <meta charset="UTF-8">
+    <title>All-in-One HTML Website</title>
 </head>
-<body align="center" style="background-color:yellow;">
-  <h1 style="color: red;" ><marquee align="center">ROUTINE;)</marquee></h1>
-  
-<h2 style="color: blue;" align="center"><b>Sunday</b></h2>
-<table border="3" align="center">
-<tr>
-<th rowspan=2>Morning</th>
-<th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day(Holiday) </td>
-</tr>
-<td> 6-7-8</td>	
-<td>6-7-8-9</td>
-<td>11-1(break)3-7</td>
+
+<body bgcolor="#f4f6f8">
+
+<!-- ================= HEADER ================= -->
+<table width="100%" bgcolor="#2c3e50" cellpadding="15">
+    <tr>
+        <td align="center">
+            <font color="white" size="6"><b>My HTML Mega Website</b></font><br>
+            <font color="#dcdcdc">Pure HTML • No CSS • No JavaScript</font>
+        </td>
+    </tr>
 </table>
-  <table border="3" align="center">
-<h2 style="color: blue;" align="center"><b>Monday</b></h2>
-  <th rowspan=2>Morning</th>
-<th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day(Holiday) </td>
-</tr>
-<td>7-8</td>	
-<td>6-7-8 (Manage Index)</td>
-<td>11-1(break)3-7</td>
-  </table>
-  <table border="3" align="center">
-    <h2 style="color: blue;" align="center"><b>Tuesday</b></h2>
+
+<br>
+
+<!-- ================= FORM SECTION ================= -->
+<table width="80%" align="center" bgcolor="white" cellpadding="20" border="1">
     <tr>
-    <th rowspan=2>Morning</th>
-<th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day(Holiday) </td>
-</tr>
-<td>7-8</td>	
-<td>6-7(MAths Practice)</td>
-<td>11-1(break)3-7</td>
-  </table>
-  <table border="3" align="center">
-   <h2 style="color: blue;" align="center"><b>Wednesday</b></h2>
+        <td colspan="2" align="center">
+            <font size="5"><b>Registration Form</b></font>
+        </td>
+    </tr>
+
     <tr>
-     <th rowspan=2>Morning</th>
-    <th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day(Holiday) </td>
-</tr>
-<td>7-8</td>	
-<td>6-7(Exercises)</td>
-<td>11-1(break)4-7</td>
- </table>
-  <table border="3" align="center"> <h2 style="color: blue;" align="center"><b>Thursday</b></h2>   
-     <tr><th rowspan=2>Morning</th><th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day(Holiday) </td>
-</tr>
-<td>7-9</td>	
-<td>6-7(Reading)</td>
-<td>11-1(break)5-7</td>
-  </table>
-  <table border="3" align="center">
-   <h2 style="color: blue;" align="center"><b>Friday</b></h2>
-      <tr>
-     <th rowspan=2>Morning</th>
-    <th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day(Holiday) </td>
-</tr>
-<td>7-8</td>	
-<td>6-7(Exercises)</td>
-<td>11-1(break)4-7</td>
-  </table>
-    <table border="3" align="center">
-      <h2 style="color: blue;" align="center"><b>Saturday</b></h2>
-       <tr>
-     <th rowspan=2>Morning</th>
-    <th rowspan=2>Evening</th>
-</tr>
-<tr>
-<td colspan=2>Day </td>
-</tr>
-<td>7-8</td>	
-<td>3-7(revision)</td>
-<td>11-1(break)4-7</td>
-    </table>
-  <h3 style="color:Pink;" align="center"> GIVEN ABOVE ROUTINE IS FOR NISHA</h3>
+        <td>Full Name</td>
+        <td><input type="text" name="name" placeholder="Enter your name"></td>
+    </tr>
+
+    <tr>
+        <td>Email</td>
+        <td><input type="email" name="email" placeholder="example@email.com"></td>
+    </tr>
+
+    <tr>
+        <td>Password</td>
+        <td><input type="password"></td>
+    </tr>
+
+    <tr>
+        <td>Gender</td>
+        <td>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </td>
+    </tr>
+
+    <tr>
+        <td>Skills</td>
+        <td>
+            <input type="checkbox"> HTML
+            <input type="checkbox"> CSS
+            <input type="checkbox"> JavaScript
+        </td>
+    </tr>
+
+    <tr>
+        <td>Country</td>
+        <td>
+            <select>
+                <option>Nepal</option>
+                <option>India</option>
+                <option>USA</option>
+                <option>UK</option>
+            </select>
+        </td>
+    </tr>
+
+    <tr>
+        <td>Date of Birth</td>
+        <td><input type="date"></td>
+    </tr>
+
+    <tr>
+        <td>Upload Photo</td>
+        <td><input type="file"></td>
+    </tr>
+
+    <tr>
+        <td>About You</td>
+        <td><textarea rows="4" cols="30"></textarea></td>
+    </tr>
+
+    <tr>
+        <td colspan="2" align="center">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+<!-- ================= LUDO BOARD ================= -->
+<table align="center" border="2" cellpadding="20">
+    <tr>
+        <td bgcolor="red"></td>
+        <td bgcolor="red"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="green"></td>
+        <td bgcolor="green"></td>
+    </tr>
+    <tr>
+        <td bgcolor="red"></td>
+        <td bgcolor="red"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="green"></td>
+        <td bgcolor="green"></td>
+    </tr>
+    <tr>
+        <td bgcolor="white"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="yellow"><b>HOME</b></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="white"></td>
+    </tr>
+    <tr>
+        <td bgcolor="blue"></td>
+        <td bgcolor="blue"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="yellow"></td>
+        <td bgcolor="yellow"></td>
+    </tr>
+    <tr>
+        <td bgcolor="blue"></td>
+        <td bgcolor="blue"></td>
+        <td bgcolor="white"></td>
+        <td bgcolor="yellow"></td>
+        <td bgcolor="yellow"></td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ================= DICE ================= -->
+<table align="center" border="2" cellpadding="15">
+    <tr>
+        <td align="center">
+            <font size="5"><b>🎲 Dice</b></font><br><br>
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>●</td>
+                    <td>&nbsp;</td>
+                    <td>●</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>●</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>●</td>
+                    <td>&nbsp;</td>
+                    <td>●</td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+
+<br><br>
+
+<!-- ================= FOOTER ================= -->
+<table width="100%" bgcolor="#2c3e50" cellpadding="10">
+    <tr>
+        <td align="center">
+            <font color="white">© 2026 HTML Project | Built with pure HTML</font>
+        </td>
+    </tr>
+</table>
+
 </body>
 </html>
-  
-  
-  
-
-
-
-
-
-
-
-
-
-
-
