@@ -1,131 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Letter For You 💘</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <title>TikTok Style Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-:root{
-  --p1:#ff4d6d;
-  --p2:#ff8fab;
-  --p3:#ffd6e0;
-  --dark:#4a1c2a;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
 
-*{box-sizing:border-box}
+    body {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
 
-body{
-  margin:0;
-  height:100vh;
-  background:linear-gradient(120deg,var(--p1),var(--p2),var(--p3));
-  background-size:400% 400%;
-  animation:bgMove 10s ease infinite;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-family:monospace;
-  overflow:hidden;
-}
-@keyframes bgMove{
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
+    section {
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
 
-/* hearts */
-.heart{
-  position:fixed;
-  bottom:-20px;
-  font-size:20px;
-  color:white;
-  opacity:.8;
-  animation:rise linear infinite;
-}
-@keyframes rise{
-  from{transform:translateY(0) scale(.6)}
-  to{transform:translateY(-120vh) scale(1.4)}
-}
+    .light {
+      background: #f5f5f5;
+      color: #111;
+    }
 
-/* envelope */
-.envelope{
-  width:260px;
-  height:170px;
-  background:#fff;
-  border-radius:20px;
-  box-shadow:0 25px 50px rgba(0,0,0,.3);
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  cursor:pointer;
-  animation:flyIn 1.2s ease;
-}
-@keyframes flyIn{
-  from{transform:translateY(200px) scale(.5);opacity:0}
-  to{transform:translateY(0) scale(1);opacity:1}
-}
+    .dark {
+      background: #0f0f0f;
+      color: white;
+    }
 
-.envelope span{
-  font-size:22px;
-  color:var(--dark);
-  animation:pulse 1.5s infinite;
-}
-@keyframes pulse{
-  0%,100%{transform:scale(1)}
-  50%{transform:scale(1.1)}
-}
+    h1 {
+      font-size: 3rem;
+      animation: fadeUp 1s ease;
+    }
 
-/* popup */
-.popup{
-  position:fixed;
-  inset:0;
-  display:none;
-  justify-content:center;
-  align-items:center;
-  background:rgba(0,0,0,.5);
-}
+    p {
+      margin-top: 12px;
+      font-size: 1.2rem;
+      opacity: 0.85;
+      max-width: 300px;
+    }
 
-.card{
-  background:white;
-  border-radius:24px;
-  padding:24px;
-  width:320px;
-  text-align:center;
-  animation:pop 0.4s ease;
-}
-@keyframes pop{
-  from{transform:scale(.6) rotate(-5deg);opacity:0}
-  to{transform:scale(1) rotate(0);opacity:1}
-}
+    button {
+      margin-top: 25px;
+      padding: 12px 32px;
+      font-size: 1rem;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      background: black;
+      color: white;
+    }
 
-.cat{
-  font-size:80px;
-}
+    .dark button {
+      background: white;
+      color: black;
+    }
 
-#question{
-  min-height:50px;
-  font-size:20px;
-  margin:10px 0;
-}
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
 
-.buttons{
-  margin-top:15px;
-  position:relative;
-  height:60px;
-}
+  <section class="light">
+    <h1>Build.</h1>
+    <p>Simple ideas turn powerful when executed right.</p>
+  </section>
 
-button{
-  padding:10px 22px;
-  font-size:16px;
-  border:none;
-  border-radius:14px;
-  cursor:pointer;
-}
+  <section class="dark">
+    <h1>Create.</h1>
+    <p>Design that feels smooth, modern, and alive.</p>
+  </section>
 
-#yes{
-  background:var(--p1);
-  color:white;
-  box-shadow:0 0 20px var(--p1);
-  animation:glow 1.2s infinite;
-}
-@keyframes
+  <section class="light">
+    <h1>Launch.</h1>
+    <p>Your website. Your rules.</p>
+    <button>Get Started</button>
+  </section>
+
+  <script>
+    // Subtle animation refresh on scroll
+    const sections = document.querySelectorAll("section");
+
+    window.addEventListener("scroll", () => {
+      sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if (top < window.innerHeight * 0.75) {
+          sec.style.opacity = "1";
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
